@@ -1,0 +1,23 @@
+{% sw_extends '@Storefront/storefront/page/product-detail/buy-widget-form.html.twig' %}
+
+
+{% block page_product_detail_buy_quantity %}
+    <div class="input-group my-input-group">
+        <div class="input-group-btn">
+            <div class="btn btn-default my-btn decrease">
+                -
+            </div>
+        </div>
+        <input type="number" class="form-control my-form-control"
+               name="lineItems[{{ product.id }}][quantity]"
+               value="1"
+               min = "1"
+               max="{{ page.product.calculatedMaxPurchase }}"
+               aria-label="...">
+        <div class="input-group-btn ">
+            <div class="btn btn-default my-btn increase">
+                +
+            </div>
+        </div>
+    </div>
+{% endblock %}

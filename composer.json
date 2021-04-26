@@ -1,0 +1,30 @@
+{
+    "name": "greg/custom-quantity-select",
+    "description": "custom quantity selector for products",
+    "version": "v1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gregor Lohaus"
+        }
+    ],
+    "require": {
+        "shopware/core": "*",
+        "shopware/administration": "*",
+        "shopware/storefront": "*"
+    },
+    "type": "shopware-platform-plugin",
+    "autoload": {
+        "psr-4": {
+            "Greg\\CustomQuantitySelect\\": "src/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "Greg\\CustomQuantitySelect\\CustomQuantitySelect",
+        "copyright": "(c) by Gregor Lohaus",
+        "label": {
+            "de-DE": "CQS",
+            "en-GB": "CQS"
+        }
+    }
+}

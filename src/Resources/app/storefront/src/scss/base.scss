@@ -1,0 +1,22 @@
+.my-input-group {
+    border: 1px solid #0a0d0f;
+    border-radius: 100pc;
+}
+
+
+.my-form-control {
+    border: 1px hidden #0d5aa7;
+    pointer-events: none;
+    -moz-appearance: textfield;
+    text-align: center;
+    width: 33%;
+}
+.my-btn{
+    witdh: 20%;
+}
+.my-btn:hover{
+    font-size: 1.2em;
+    font-weight: 900;
+    transition: font-weight 20ms;
+}
+
