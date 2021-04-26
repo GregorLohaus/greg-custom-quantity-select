@@ -12,6 +12,7 @@
         <input type="number" class="form-control my-form-control"
                name="lineItems[{{ product.id }}][quantity]"
                value="{{ page.product.minPurchase }}"
+               min="{{ page.product.minPurchase }}"
                max="{{ page.product.calculatedMaxPurchase }}"
                aria-label="...">
         <div class="input-group-btn ">
