@@ -3,6 +3,7 @@
 
 {% block page_product_detail_buy_quantity %}
     <div class="input-group my-input-group">
+        <input type="hidden" value="{{ page.product.purchaseSteps }}" class="purchaseSteps">
         <div class="input-group-btn">
             <div class="btn btn-default my-btn decrease">
                 -
@@ -10,8 +11,7 @@
         </div>
         <input type="number" class="form-control my-form-control"
                name="lineItems[{{ product.id }}][quantity]"
-               value="1"
-               min = "1"
+               value="{{ page.product.minPurchase }}"
                max="{{ page.product.calculatedMaxPurchase }}"
                aria-label="...">
         <div class="input-group-btn ">
