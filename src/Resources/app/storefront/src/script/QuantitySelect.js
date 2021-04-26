@@ -86,6 +86,7 @@ export default class QuantitySelect extends Plugin {
         document.addEventListener('mouseup', () => {
             //hander stops inteerval
             clearInterval(this.decreasing);
+            clearTimeout(tm);
         });
     }
 }
